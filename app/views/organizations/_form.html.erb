@@ -1,6 +1,7 @@
 <%= form_for @organization, html: {class: "form-horizontal"} do |f| %>
 
-<%= render "shared/error", collection: @organization %>
+<%= render partial: "shared/error", locals: {collection: @organization} %>
+<%=# render "shared/error", collection: @organization also works %>
 
   <div class="form-group">
     <%= f.label :name, class: "control-label col-sm-2" %>
